@@ -1,4 +1,3 @@
-
 /******************************************************************************************
  * An Improved IR decoder for Arduino
  * 
@@ -31,7 +30,9 @@
 // This function sets up the library to decode IR on irPin.
 void ir_begin(uint8_t _irPin);
 
-// Blah
+// This functions returns a zero if there is no valid code present,
+// it returns a code if there is one,
+// and it returns -1 if the received codes are repeating.
 int16_t ir_data(void);
 
 
